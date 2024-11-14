@@ -1,3 +1,3 @@
-module github.com/dlbarduzzi/showcase
+module github.com/dlbarduzzi/demo
 
 go 1.23.3

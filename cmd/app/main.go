@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/dlbarduzzi/showcase/internal/logging"
+	"github.com/dlbarduzzi/demo/internal/logging"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 	logger = logging.NewLoggerFromEnv()
 	logger.Info("Hello from env mode!")
 
-	logger = logging.NewLoggerFromEnv().With("app", "showcase")
+	logger = logging.NewLoggerFromEnv().With("app", "demo")
 
 	ctx := context.Background()
 	ctx = logging.LoggerWithContext(ctx, logger)
