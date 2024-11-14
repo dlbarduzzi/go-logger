@@ -1,5 +1,11 @@
 # go-logger
 
+<p>
+    <a href="https://github.com/dlbarduzzi/syncbase/actions/workflows/test.yaml" target="_blank" rel="noopener">
+        <img src="https://github.com/dlbarduzzi/syncbase/actions/workflows/test.yaml/badge.svg" alt="test" />
+    </a>
+</p>
+
 An example of how to implement a go structure logging using [log/slog](https://go.dev/blog/slog) standard
 library and **heavily** inspired by [google/exposure-notifications-server](https://github.com/google/exposure-notifications-server/blob/main/pkg/logging/logger.go) applicaton.
 
