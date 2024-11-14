@@ -3,8 +3,6 @@ package logging
 import "testing"
 
 func TestNewLogget(t *testing.T) {
-	t.Parallel()
-
 	testCases := []struct {
 		mode  string
 		level string
@@ -14,7 +12,6 @@ func TestNewLogget(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		tc := tc
 		t.Run(tc.mode, func(t *testing.T) {
 			t.Parallel()
 			logger := NewLogger(tc.mode, tc.level)
